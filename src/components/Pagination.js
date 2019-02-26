@@ -23,7 +23,7 @@ class Pagination extends PureComponent {
     }
 
     setPage(page) {
-        const items = this.props.items;
+        const {items} = this.props;
         let pager = this.state.pager;
 
         if (page < 1 || page > pager.totalPages) {
