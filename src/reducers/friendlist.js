@@ -3,6 +3,11 @@ import * as types from '../constants/ActionTypes';
 const initialState = {
   friendsById: [
     {
+      name: 'Donald Trump',
+      gender: 'male',
+      starred: false
+    },
+    {
       name: 'Hillary Clinton',
       gender: 'female',
       starred: true
@@ -12,6 +17,21 @@ const initialState = {
       gender: 'male',
       starred: true
     },
+    {
+      name: 'George W Bush',
+      gender: 'male',
+      starred: true
+    },
+    {
+      name: 'Bill Clinton',
+      gender: 'male',
+      starred: true
+    },
+    {
+      name: 'Ronald Regan',
+      gender: 'male',
+      starred: true
+    },   
     {
       name: 'John F. Kennedy',
       gender: 'male',

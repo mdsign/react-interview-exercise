@@ -6,22 +6,27 @@ class AddFriendInput extends PureComponent {
   constructor(props) {
     super(props);
     this.state = {
-      name: this.props.name || "",
-      gender: this.props.gender || ""
+      name: "",
+      gender: ""
     };
   }
 
+  //method to handle name change
   handleNameChange = (e) => {
-    this.setState({ name: e.target.value });
+    this.setState({
+      name: e.target.value
+    });
   };
 
-  handleGenderSelect = e => {
+  //method to handle gender select
+  handleGenderSelect = (e) => {
     this.setState({
       gender: e.target.value
     });
   };
 
-  handleSubmit = e => {
+  //method to update friend data to redux store
+  handleSubmit = (e) => {
     e.preventDefault();
 
     const friendData = {
@@ -30,7 +35,10 @@ class AddFriendInput extends PureComponent {
     };
 
     this.props.addFriend(friendData);
-    this.setState({ name: "", gender: "" });
+    this.setState({
+      name: "",
+      gender: ""
+    });
   };
 
   render() {

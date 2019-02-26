@@ -1,8 +1,8 @@
-import React, { Component, PropTypes } from 'react';
+import React, { PureComponent, PropTypes } from 'react';
 import styles from './FriendList.css';
 import FriendListItem from './FriendListItem';
 
-class FriendList extends Component {
+class FriendList extends PureComponent {
   render () {
     return (
       <ul className={styles.friendList}>
