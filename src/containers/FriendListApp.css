@@ -21,3 +21,11 @@ body {
   padding-left: 10px;
   font-family: Helvetica;
 }
+:local(input[type=submit]) {
+  background-color: #0896d8;
+  border-color: #6cb9fd;
+}
+:local(input[type=submit]:hover) {
+  background-color: #18a7ea;
+  border-color: #9fd1fd;
+}

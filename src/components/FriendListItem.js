@@ -5,10 +5,15 @@ import styles from './FriendListItem.css';
 class FriendListItem extends Component {
 
   render() {
+    const genderIconClass = this.props.gender === 'male' ? styles.maleIcon : styles.femaleIcon;
+
     return (
       <li className={styles.friendListItem}>
         <div className={styles.friendInfos}>
-          <div><span>{this.props.name}</span></div>
+          <div>
+            <i className={`fa ${genderIconClass}`} />
+            <span>{this.props.name}</span>
+          </div>
           <div>
             <small>xx friends in common</small>
           </div>

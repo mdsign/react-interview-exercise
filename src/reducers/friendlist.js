@@ -3,15 +3,33 @@ import * as types from '../constants/ActionTypes';
 const initialState = {
   friendsById: [
     {
+      name: 'Hillary Clinton',
+      gender: 'female',
+      starred: true
+    },
+    {
+      name: 'Barack Obama',
+      gender: 'male',
+      starred: true
+    },
+    {
+      name: 'John F. Kennedy',
+      gender: 'male',
+      starred: true
+    },
+    {
       name: 'Theodore Roosevelt',
+      gender: 'male',
       starred: true
     },
     {
       name: 'Abraham Lincoln',
+      gender: 'male',
       starred: false
     },
     {
       name: 'George Washington',
+      gender: 'male',
       starred: false
     }
   ]
@@ -25,7 +43,8 @@ export default function friends(state = initialState, action) {
         friendsById: [
           ...state.friendsById,
           {
-            name: action.name
+            name: action.data.name,
+            gender: action.data.gender
           }
         ],
       };

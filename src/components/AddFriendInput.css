@@ -1,6 +1,19 @@
+:local(.formSpacing) {
+  padding: 10px;
+}
+
 :local(.addFriendInput) {
   border-radius: 0;
   border-color: #ABAAAA;
   border-left: 0;
   border-right: 0;
+  margin-bottom: 5px;
+}
+
+:local(.addGender) {
+  border-radius: 0;
+  border-color: #ABAAAA;
+  border-left: 0;
+  border-right: 0;
+  margin-bottom: 5px;
 }

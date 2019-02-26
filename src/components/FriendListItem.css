@@ -5,6 +5,22 @@
   border-bottom: 1px solid #E3E3E3;
   display: flex;
 }
+:local(.maleIcon) {
+  background-image: url(../asset/male.png);
+  background-position: left top;
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 20px;
+  height: 20px;
+}
+:local(.femaleIcon) {
+  background-image: url(../asset/female.png);
+  background-position: left top;
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 20px;
+  height: 20px;
+}
 
 :local(.friendInfos) {
   flex: 1 0 auto;
@@ -12,6 +28,10 @@
 
 :local(.friendInfos span) {
   font-weight: bold;
+  vertical-align: top;
+  display: inline-block;
+  line-height: 20px;
+  margin: 1px 5px;
 }
 
 :local(.friendActions) {

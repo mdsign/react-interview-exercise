@@ -1,0 +1,16 @@
+:local(.paginationOverrides) {
+    padding-left: 4px;
+    margin: 5px 0 0;
+}
+
+:local(.pageCount) {
+    color: #ffffff;
+    font-size: 14px;
+    display: inline-block;
+    vertical-align: top;
+    border: 1px solid #fafafa;
+    border-radius: 3px;
+    padding: 5px 10px;
+    margin: 6px 7px 5px;
+}
+
