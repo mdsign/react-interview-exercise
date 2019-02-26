@@ -19,16 +19,16 @@ open http://localhost:3000
 - Please deliver something that works, non working project is an automatic disqualification
 
 ## Pagination Component
- - Component have navigation buttons with first, previous, next and last buttons representing html code characters
- - Navigation for first five pages with numbers also provided
- - If page count exeeds five then current page item numbers with total items count has been shown
+ - Component have navigation buttons with first, previous, next and last buttons represented with html code characters
+ - Navigation for first five pages provided with numbers which uses the available space in the footer
+ - When page count exeeds five then current page item numbers with total items count has been shown to avoid wrapping
  - When no items to show, then pagination will be hidden
  
  ## Select Gender
-  - Option to add gender is inculded with select component
+  - Option to add gender is included with select component
   - Friends data is updated with gender into redux store
   - In friends list, the gender is show using icon
  
  ## Test Cases
- - Libraries Jest, chai and enzyme are used
+ - Libraries Jest, Chai and Enzyme are used
  - Test cases written for basic component rendering, event and snapshot test
